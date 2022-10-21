@@ -16,9 +16,9 @@
                 <a class="logo-link" href="./index.html">Web<span class="logo-header">Studio</span></a>
             <nav class="page-navigation">
                 <ul class="site-nav list page-navigation">
-                    <li><a class="link current" href="">Студія</a></li>
-                    <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
-                    <li><a class="link" href="">Контакти</a></li>
+                    <li class="nav-link"><a class="link current" href="">Студія</a></li>
+                    <li class="nav-link"><a class="link " href="./portfolio.html">Портфоліо</a></li>
+                    <li class="nav-link"><a class="link" href="">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="auth-nav list">
@@ -40,7 +40,7 @@
         <section class="section-hero">
             <div class="container container-hero">
                 <h1 class="hero">Ефективні рішення для вашого бізнесу</h1>
-                <button class="button primary" type="button">Замовити послугу</button>
+                <button data-modal-open class="button primary" type="button">Замовити послугу</button>
             </div>
         </section>
     
@@ -96,13 +96,25 @@
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="section-images-foto">
                     <li>
-                        <img src="./images/img1.jpg" alt="екран з кодом" width="370">
+                        <div class="images">
+                            <img src="./images/img1.jpg" alt="екран з кодом" width="370">
+                            <p class="images-text">Десктопні додатки</p>
+                        </div>
+                        
                     </li>
                     <li>
-                        <img src="./images/img2.jpg" alt="екран з мобільними телефонами" width="370">
+                        <div class="images">
+                            <img src="./images/img2.jpg" alt="екран з мобільними телефонами" width="370">
+                            <p class="images-text">Мобільні додатки</p>
+                        </div>
+                        
                     </li>
                     <li>
-                        <img src="./images/img3.jpg" alt="екран з графічним зображенням" width="370">
+                        <div class="images">
+                            <img src="./images/img3.jpg" alt="екран з графічним зображенням" width="370">
+                            <p class="images-text">Дизайнерські рішення</p>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
@@ -320,5 +332,17 @@
         </div>
        
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="icon-close" width="18px" height="18px">
+                    <use href="./images/sprite22.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+        <script src="./js/modal.js"></script>
+    </body>
 </body>
 </html>
